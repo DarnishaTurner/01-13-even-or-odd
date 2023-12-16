@@ -5,7 +5,11 @@ const numbers = [12, 25, 42, 53, 60];
 numbers.forEach(number => {
   let result = '';
 
-  // Write your if-else statements here to determine even or odd
-
+  if (number % 2 === 0) {
+    result = `Even number`;
+  } else {
+    result = `Odd number`;
+  }
+  
   console.log(`Number ${number} is ${result}`);
 });
